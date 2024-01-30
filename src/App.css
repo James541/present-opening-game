@@ -1,0 +1,107 @@
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.greeting {
+  background: linear-gradient(
+    to right,
+    #03cf00 30%,
+    white 45%,
+    #ff0000 100%
+  ); /* Gradient for the text background */
+  -webkit-background-clip: text; /* Set the background-clip to text for webkit browsers */
+  color: transparent; /* Make the text transparent */
+  text-align: center;
+  font-size: 5em; /* Adjust the font size as needed */
+  margin: 0; /* Remove default margin to prevent spacing */
+}
+
+.presents {
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-around;
+}
+.presentOne {
+  width: 500px;
+  height: 500px;
+  background-color: antiquewhite;
+  cursor: pointer;
+}
+
+.presentOneOpen {
+  width: 500px;
+  height: 500px;
+  background-image: url("/cow.jpg");
+  cursor: pointer;
+}
+
+.presentTwo {
+  display: flex;
+  width: 500px;
+  height: 500px;
+  background-color: rgb(66, 191, 76);
+  cursor: pointer;
+}
+
+.presentTwoOpen {
+  width: 500px;
+  height: 500px;
+  background-image: url("/chicken.jpg");
+  cursor: pointer;
+  z-index: 2;
+}
+
+.presentThree {
+  width: 500px;
+  height: 500px;
+  background-color: rgb(136, 88, 215);
+  cursor: pointer;
+}
+
+.presentThreeOpen {
+  width: 500px;
+  height: 500px;
+  background-image: url("/ariana.jpg");
+  cursor: pointer;
+}
+
+.presentsTop {
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+
+.presentOneTop {
+  width: 500px;
+  height: 500px;
+  background-color: rgb(229, 56, 65);
+  cursor: pointer;
+}
+
+.presentOneOpenTop {
+  width: 500px;
+  height: 500px;
+  background-image: url("/moon.jpg");
+}
+
+.presentTwoTop {
+  display: flex;
+  width: 500px;
+  height: 500px;
+  background-color: rgb(30, 56, 249);
+}
+
+.presentTwoOpenTop {
+  width: 500px;
+  height: 500px;
+  background-image: url("/metal.jpg");
+  z-index: 2;
+}
