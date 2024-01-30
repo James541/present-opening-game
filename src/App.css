@@ -105,3 +105,47 @@ body {
   background-image: url("/metal.jpg");
   z-index: 2;
 }
+
+.presentFour {
+  width: 500px;
+  height: 500px;
+  background-color: #e1e64d;
+  cursor: pointer;
+}
+
+.presentFourOpen {
+  width: 500px;
+  height: 500px;
+  background-image: url("/monkey.jpg");
+  cursor: pointer;
+}
+
+.presentFive {
+  display: flex;
+  width: 500px;
+  height: 500px;
+  background-color: #fe5829;
+  cursor: pointer;
+}
+
+.presentFiveOpen {
+  width: 500px;
+  height: 500px;
+  background-image: url("/elephant.jpg");
+  cursor: pointer;
+  z-index: 2;
+}
+
+.presentSix {
+  width: 500px;
+  height: 500px;
+  background-color: #3f6bc9;
+  cursor: pointer;
+}
+
+.presentSixOpen {
+  width: 500px;
+  height: 500px;
+  background-image: url("/banjo.jpg");
+  cursor: pointer;
+}

@@ -8,11 +8,17 @@ function App() {
   const [presentOneTop, setPresentOneTop] = useState(true);
   const [presentTwoTop, setPresentTwoTop] = useState(true);
   const [presentThree, setPresentThree] = useState(true);
+  const [presentFour, setPresentFour] = useState(true);
+  const [presentFive, setPresentFive] = useState(true);
+  const [presentSix, setPresentSix] = useState(true);
   const Moo = "/moo.mp3";
   const Cluck = "/cluck.mp3";
   const Ariana = "/ariana.mp3";
   const Moon = "/moon.mp3";
   const Metal = "/metal.mp3";
+  const Monkey = "/monkey.mp3";
+  const Elephant = "/elephant.mp3";
+  const Banjo = "/banjo.mp3";
 
   const playMoo = () => {
     const audio = new Audio(Moo);
@@ -36,6 +42,21 @@ function App() {
 
   const playMetal = () => {
     const audio = new Audio(Metal);
+    audio.play();
+  };
+
+  const playMonkey = () => {
+    const audio = new Audio(Monkey);
+    audio.play();
+  };
+
+  const playElephant = () => {
+    const audio = new Audio(Elephant);
+    audio.play();
+  };
+
+  const playBanjo = () => {
+    const audio = new Audio(Banjo);
     audio.play();
   };
 
@@ -64,6 +85,20 @@ function App() {
     playMetal();
   }
 
+  function presentFourOpen() {
+    setPresentFour(false);
+    playMonkey();
+  }
+
+  function presentFiveOpen() {
+    setPresentFive(false);
+    playElephant();
+  }
+
+  function presentSixOpen() {
+    setPresentSix(false);
+    playBanjo();
+  }
   return (
     <>
       <div className="greeting">
@@ -101,6 +136,21 @@ function App() {
         <div
           className={presentThree ? "presentThree" : "presentThreeOpen"}
           onClick={presentThreeOpen}
+        ></div>
+      </div>
+      <div className="presents">
+        <div
+          className={presentFour ? "presentFour" : "presentFourOpen"}
+          onClick={presentFourOpen}
+        ></div>
+
+        <div
+          className={presentFive ? "presentFive" : "presentFiveOpen"}
+          onClick={presentFiveOpen}
+        ></div>
+        <div
+          className={presentSix ? "presentSix" : "presentSixOpen"}
+          onClick={presentSixOpen}
         ></div>
       </div>
     </>
